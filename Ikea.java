@@ -53,13 +53,13 @@ public class Ikea {
 		
 		 
 		
-		//	Fill ‘tables’ in the search area and search for it
-		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("ùåìçï"); //write table
+		//	Fill â€˜tablesâ€™ in the search area and search for it
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("×©×•×œ×—×Ÿ"); //write table
 	
 		Thread.sleep(1000);
 		
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//ol[@id='search-suggestions']/li/a[contains(@href, 'ùåìçï ÷ôä')]")).click(); //table of caffee
+		driver.findElement(By.xpath("//ol[@id='search-suggestions']/li/a[contains(@href, '×©×•×œ×—×Ÿ ×§×¤×”')]")).click(); //table of caffee
 		driver.findElement(By.xpath("//*[@id=\"search-box__searchbutton\"]")).click();
 		Thread.sleep(1000);
 		
@@ -81,7 +81,7 @@ public class Ikea {
 		driver.findElement(By.xpath("//button[@class=\"pip-link-button pip-availability-modal-open-button\"]")).click(); //Click for see locations
 		js.executeScript("window.scrollBy(0, 1000)", ""); //scroll down
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"change-store-input\"]")).sendKeys("ðúðéä");// If avaliable in Natania	
+		driver.findElement(By.xpath("//*[@id=\"change-store-input\"]")).sendKeys("× ×ª× ×™×”");// If avaliable in Natania	
 		
 		Thread.sleep(2000);	
 		driver.quit();
